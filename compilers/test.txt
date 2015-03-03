@@ -1,0 +1,30 @@
+void fun(a1,a2)
+{
+	num B
+	num c[5]
+	num d
+	string str
+
+	a=3
+	c[1]=4
+	c[2]=2
+	a1 = a+c[1]*c[2]
+
+	if(a==3)
+	{
+		call fun1(a)	
+		a=a+1
+	}
+	elsif(a>3)
+	{
+		while(a!=3)
+		{
+			a=a-1
+		}
+	}
+	else
+	{
+		d=a
+	}
+}
+

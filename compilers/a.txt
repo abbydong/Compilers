@@ -1,0 +1,13 @@
+call while
+	+
+{}
+num
++ *
+[
+]
+()
+abcdefg
+a67p
+321.56
+asdfg%^&
+#asdfga

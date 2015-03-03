@@ -1,0 +1,2 @@
+char non_terminal[40][6] ={"E" ,"E'" , "T" , "T'" , "Bop1" , "Bop2" , "F" , "B" , "B'" , "S" ,"Relop" , "ELS" , "L" , "Elist" , "ARRAY" , "P" , "TYPE" , "A" , "FUNC" };
+char terminal[40][7] = {"id" , "d" , "(" , ")" , "+" , "-" , "*" , "/" , "%" , "!" , "|" , "&" , "if" , "while" , "return" , "else" , "elsif" , "{" , "}" , "[" , "]" , "=" , "==" , ">" , "<" , ">=" , "<=" , "num" , "string" , "void" , "call", "~"};

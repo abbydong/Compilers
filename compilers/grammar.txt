@@ -1,0 +1,84 @@
+E E' T T' Bop1 Bop2 F B B' S S' Relop ELS L Elist ARRAY P TYPE A FUNC
+id d ( ) + - * / % ! & | if while return else elsif { } [ ] = == > < >= <= num string void call ~
+E -> T E' 
+E' -> Bop1 T E' 
+E' -> ~
+T -> F T'
+T' -> Bop2 F T' 
+T' -> ~
+F -> ( E )
+F -> id 
+F -> d
+Bop1 -> + 
+Bop1 -> -
+Bop2 -> * 
+Bop2 -> / 
+Bop2 -> %
+B -> ! B B' 
+B -> ( E ) B' 
+B -> id Relop B'
+B' -> | B B' 
+B' -> & B B'
+S -> id = E
+S -> ARRAY = E
+S -> if ( B ) S
+S -> if ( B ) ELS
+S -> ~
+S -> while ( B ) S
+S -> return id
+S -> { L }
+S -> call id ( Elist )
+ELS -> else S
+ELS -> elsif ( B ) S ELS
+ELS -> ~
+L -> L S
+L -> ~
+Relop -> >
+Relop -> <
+Relop -> ==
+Relop -> >=
+Relop -> <=
+ARRAY -> id [ d ]
+Elist -> E
+Elist -> Elist , E
+Elist -> ~
+P -> TYPE A
+A -> id
+A -> ARRAY
+A -> FUNC
+FUNC -> id ( Elist ) S
+TYPE -> num 
+TYPE -> string 
+TYPE -> void
+id -> id
+d -> d
+( -> (
+) -> )
++ -> +
+- -> -
+* -> *
+/ -> /
+% -> %
+! -> !
+& -> &
+| -> |
+if -> if
+while -> while
+return -> return
+else -> else
+elsif -> elsif
+{ -> {
+} -> }
+[ -> [
+] -> ]
+= -> =
+== -> ==
+> -> >
+< -> <
+>= -> >=
+<= -> <=
+num -> num
+string -> string
+void -> void
+call -> call
+~ -> ~
